@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
+
+$primary-color: #458FF6;
+
+@mixin regular {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba($color: #1F1534, $alpha: 0.5);
+}
+@mixin light {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+  color: rgba($color: #7D7987, $alpha: 0.5);
+}
+@mixin bold {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  color: #233348;
+}
