@@ -2,18 +2,22 @@
   <div id="app">
     <navbar/>
     <header-page/>
+    <services/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
+
 import HeaderPage from './views/Header/index.vue';
 import Navbar from './components/Navbar.vue';
+import Services from './views/Services/index.vue';
 
 @Component({
   components: {
     HeaderPage,
     Navbar,
+    Services,
   },
 })
 export default class App extends Vue {}

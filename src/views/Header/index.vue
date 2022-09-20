@@ -22,7 +22,7 @@ import { Vue, Component } from 'vue-property-decorator';
 export default class Header extends Vue {}
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
   @import '../../scss/style.scss';
 
   .hero-wrap {

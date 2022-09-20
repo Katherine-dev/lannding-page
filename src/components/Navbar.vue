@@ -26,6 +26,11 @@ export default class Navbar extends Vue {}
 
 .header-wrapper {
   display: flex;
+
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #fff;
 }
 
 .nav-element {
