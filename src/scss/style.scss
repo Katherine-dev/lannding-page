@@ -18,3 +18,8 @@ $primary-color: #458FF6;
   font-weight: 700;
   color: #233348;
 }
+
+@mixin button-o {
+  color: $primary-color;
+  background-color: transparent;
+}

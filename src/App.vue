@@ -26,30 +26,29 @@ export default class App extends Vue {}
 <style lang='scss'>
 @import './scss/style.scss';
 
+html {
+  overflow-x: hidden;
+}
+
 #app {
+  @include regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @include regular
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1100px;
   margin: auto;
 }
 
-@media (max-width: 1299px) {
+@media (max-width: 1099px) {
   .container {
-    max-width: 1100px;
-  }
-}
-@media (max-width: 1199px) {
-  .container {
-    max-width: 960px;
+    max-width: 800px;
   }
 }
 @media (max-width: 991px) {
   .container {
-    max-width: 750px;
+    max-width: 650px;
   }
 }
 @media (max-width: 768px) {

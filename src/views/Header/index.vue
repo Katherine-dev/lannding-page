@@ -1,16 +1,18 @@
 <template>
-    <div class="container hero-wrap">
+    <div>
       <img class="bg-dots" src="../../assets/icons/dots.svg" alt="">
 
-      <div class="text-container">
-        <span class="bold-text"> Virtual healthcare<br/>for you</span>
-        <span class='regular-text'>Trafalgar provides progressive, and affordable
-        <br/>healthcare, accessible on mobile and online<br/>for everyone</span>
-        <button class='button-primary'>Consult today</button>
-      </div>
+      <div class="container hero-wrap">
+        <div class="text-container">
+          <span class="bold-text"> Virtual healthcare<br/>for you</span>
+          <span class='regular-text'>Trafalgar provides progressive, and affordable
+          <br/>healthcare, accessible on mobile and online<br/>for everyone</span>
+          <button class='button-primary'>Consult today</button>
+        </div>
 
-      <div class="image-container">
-        <img src="../../assets/images/doctors.svg" alt="">
+        <div class="image-container">
+          <img src="../../assets/images/doctors.svg" alt="">
+        </div>
       </div>
     </div>
 </template>
@@ -68,7 +70,5 @@ export default class Header extends Vue {}
 
   .bg-dots {
     position: absolute;
-    top: 0;
-    left: -150px;
   }
 </style>

@@ -45,6 +45,11 @@ export default class Navbar extends Vue {}
     justify-content: flex-end;
   }
 }
+
+.nav-element:hover:not(.is-active) {
+  color: rgba(#1F1534, 0.7);
+}
+
 .logo {
   display: flex;
   align-items: center;

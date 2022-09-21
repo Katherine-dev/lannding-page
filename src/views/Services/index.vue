@@ -1,25 +1,31 @@
 <template>
-  <div class="services-container">
-    <div class="text-container">
-      <span class="bold-text">Our services</span>
-      <hr class="divider"/>
-      <span class="light-text">We provide to you the best choiches for you.
-        Adjust it to your health needs and make sure your undergo treatment <br/>
-        with our highly qualified doctors you can consult with us which type of
-        service is suitable for your health</span>
-    </div>
-
-    <div class="container">
+  <div>
+    <div class="services-container">
       <img src="../../assets/images/bg-element.svg" alt="" class='bg-element'>
       <img src="../../assets/icons/dots-2.svg" alt="" class='bg-dots'>
-      <div class="grid-container container">
-        <card
-          v-for="(card, index) in cards"
-          :key="index"
-          :imageName="card.image"
-          :title="card.title"
-          :description="card.description"
-        />
+
+      <div class="text-container">
+        <span class="bold-text">Our services</span>
+        <hr class="divider"/>
+        <span class="light-text">We provide to you the best choiches for you.
+          Adjust it to your health needs and make sure your undergo treatment <br/>
+          with our highly qualified doctors you can consult with us which type of
+          service is suitable for your health</span>
+      </div>
+
+      <div class="container">
+        <div class="grid-container container">
+          <card
+            v-for="(card, index) in cards"
+            :key="index"
+            :imageName="card.image"
+            :title="card.title"
+            :description="card.description"
+          />
+        </div>
+        <div class="button-wrapper">
+          <button class="button-o">Learn more</button>
+        </div>
       </div>
     </div>
   </div>
@@ -122,13 +128,30 @@ export default class Services extends Vue {
     position: absolute;
   }
 
-  .bg-element {
-    top: -260px;
-    left: -150px;
+  .bg-dots {
+    top: 1200px;
+    right: 180px;
   }
 
-  .bg-dots {
-    top: 300px;
-    right: 30px;
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 70px;
+  }
+
+  .button-o {
+    @include button-o;
+    @include bold;
+
+    border-color: $primary-color;
+    color: $primary-color;
+    background-color: transparent;
+
+    line-height: 60px;
+    padding: 0 50px;
+
+    border-radius: 55px;
+    border-style: solid;
   }
 </style>
