@@ -5,8 +5,8 @@
         <span class="logo-text">Trafalgar</span>
       </div>
       <ul class="nav-element__wrapper">
-        <li class="nav-element">Home</li>
-        <li class="nav-element">Find a doctor</li>
+        <li class="nav-element"><router-link to="/">Home</router-link></li>
+        <li class="nav-element"><router-link to="/#">Find a doctor</router-link></li>
         <li class="nav-element">Apps</li>
         <li class="nav-element">Testimonials</li>
         <li class="nav-element">About us</li>
